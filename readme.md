@@ -16,9 +16,13 @@
 - Cypress suggests to add a data attribute (data-cy) to the elements and use that property  in tests to identify objects
 
 ``` Html
-<input type="text" data-cy="input-first-name"> <input> 
+<input class="form-control mr-sm-2" type="text" placeholder="Search" data-cy="search-input-box">
 ```
 
 cyrpess test looks like
 
-//TODO: finish the command# LearningCypress
+```js
+ cy.get('[data-cy="search-input-box"]')
+            .invoke('attr', 'placeholder')
+            .should('equal', 'Search')
+```            
