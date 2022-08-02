@@ -7,7 +7,7 @@ describe('mock network calls', () => {
 
   })
 
-  it('Validate default content on the search input box', () => {
+  it('mock network calls', () => {
 
     var myresponse = [
       {
@@ -30,4 +30,6 @@ describe('mock network calls', () => {
       .click()
 
   })
+
+
 })
