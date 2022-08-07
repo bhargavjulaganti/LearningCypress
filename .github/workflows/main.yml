@@ -13,8 +13,7 @@ jobs:
       - name: Cypress run
         uses: cypress-io/github-action@v4
         with:
-          build: npm install --save-dev cypress
-          # start: npm start
+          runTests: false
       - name: Cypress run tests
         uses: cypress-io/github-action@v4
         with:
