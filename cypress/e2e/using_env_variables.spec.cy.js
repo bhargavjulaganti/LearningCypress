@@ -1,14 +1,14 @@
-// const cypress = require("cypress")
+// // const cypress = require("cypress")
 
-describe('Using environment variables', () => {
+// describe('Using environment variables', () => {
     
-    beforeEach('Navigate to browser', () => {
-        cy.visit("http://localhost:4200/")
+//     beforeEach('Navigate to browser', () => {
+//         cy.visit("http://localhost:4200/")
       
-      })
+//       })
     
-    it('How to log and use environment variables', () => {
+//     it('How to log and use environment variables', () => {
        
-       cy.log(Cypress.env('foo'));
-    })
-})
+//        cy.log(Cypress.env('foo'));
+//     })
+// })
