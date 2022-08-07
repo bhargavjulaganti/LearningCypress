@@ -6,6 +6,7 @@
 4. Install cypress `npm install --save-dev cypress`
 5. Open Cypress `npx cypress open`
 6. Run from command line `npx cypress run`
+7. Run specific test from command line `npx cypress run --record --spec "cypress/e2e/first_test.spec.cy.js"`
 
 # Good to know about cypress
 
