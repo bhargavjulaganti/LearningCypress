@@ -13,5 +13,9 @@ jobs:
       - name: Cypress run
         uses: cypress-io/github-action@v4
         with:
-          build: npm run build
-          start: npm start
+          build: npm install --save-dev cypress
+          # start: npm start
+      - name: Cypress run tests
+        uses: cypress-io/github-action@v4
+        with:
+          build: npx cypress run --spec "cypress/e2e/first_test.spec.cy.js"   
