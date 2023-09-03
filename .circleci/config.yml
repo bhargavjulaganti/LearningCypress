@@ -11,5 +11,5 @@ workflows:
       - cypress/run:
           start-command: 'npm run test'
           post-steps:
-            - run: cd cypress/reports && ls
+            - run: cd cypress/reports/html && ls
    
