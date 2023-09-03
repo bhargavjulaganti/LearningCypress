@@ -10,6 +10,6 @@ workflows:
     jobs:
       - cypress/run:
           start-command: 'npm run test'
-    run-tests:
-      - run: ls
+          post-steps:
+            - run: ls
    
