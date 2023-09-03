@@ -10,4 +10,5 @@ workflows:
     jobs:
       - cypress/run:
           start-command: 'npm run test'
-          store_artifacts: 'cypress/reports'
+      - store_artifacts: 
+          path: 'cypress/reports'
