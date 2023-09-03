@@ -12,4 +12,6 @@ workflows:
           start-command: 'npm run test'
           post-steps:
             - run: cd cypress/reports/html && ls
+            - store_artifacts:
+                path: cd cypress/reports/html/index.html
    
