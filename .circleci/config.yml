@@ -9,4 +9,4 @@ workflows:
   build:
     jobs:
       - cypress/run:
-          start-command: 'npm run start'
+          start-command: 'npm run test'
