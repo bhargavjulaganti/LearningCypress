@@ -14,10 +14,12 @@ jobs:
         uses: cypress-io/github-action@v4
         with:
           # runTests: false
-          build: npm install --save-dev cypress
-      - name: Cypress run tests
-        uses: cypress-io/github-action@v4
-        with:
-          # build: npx cypress run --spec "cypress/e2e/first_test.spec.cy.js"   
-          path: cd cypress && pwd && ls
-          build: npx cypress run --spec "cypress/e2e/first_test.spec.cy.js"   
+          build: npm run build
+          start: npm start
+          browser: chrome
+      # - name: Cypress run tests
+      #   uses: cypress-io/github-action@v4
+      #   with:
+      #     # build: npx cypress run --spec "cypress/e2e/first_test.spec.cy.js"   
+      #     path: cd cypress && pwd && ls
+      #     build: npx cypress run --spec "cypress/e2e/first_test.spec.cy.js"   
