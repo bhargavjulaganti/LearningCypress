@@ -20,3 +20,4 @@ jobs:
         with:    
           build: npm install 
           start: npm test
+          browser: chrome
