@@ -10,5 +10,6 @@ workflows:
     jobs:
       - cypress/run:
           start-command: 'npm run test'
-      # - store_artifacts: 
-      #     path: 'cypress/reports'
+    run-tests:
+      - run: ls
+   
