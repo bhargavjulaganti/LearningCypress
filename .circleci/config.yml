@@ -13,5 +13,5 @@ workflows:
           post-steps:
             - run: cd cypress/reports/html && ls
             - store_artifacts:
-                path: cypress/reports/html/index.html
+                path: cypress/reports/html
    
