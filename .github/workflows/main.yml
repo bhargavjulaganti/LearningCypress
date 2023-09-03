@@ -21,4 +21,4 @@ jobs:
           build: npm run build 
           start: npm test
           browser: chrome
-          path: cypress/reports/html
+          path: cypress/reports/html/
