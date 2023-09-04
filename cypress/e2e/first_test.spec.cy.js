@@ -4,6 +4,8 @@ describe('google spec', () => {
 
         cy.get('#APjFqb') //'.gLFyf.gsfi')
             .type('My first cypress test')
+
+        cy.title().should('eq', 'Google')    
     })
 
 

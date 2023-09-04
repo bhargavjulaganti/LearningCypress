@@ -9,4 +9,11 @@ workflows:
   build:
     jobs:
       - cypress/run:
-          start-command: 'npm run test'
+          # install-browsers: true
+          # start-command: 'npm run test'
+          cypress-command: 'npx cypress run ' #--browser chrome
+          post-steps:
+            - run: cd cypress/reports/html && ls
+            - store_artifacts:
+                path: cypress/reports/html
+   
