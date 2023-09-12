@@ -8,26 +8,14 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      # Install NPM dependencies, cache them correctly
-      # and run all Cypress tests
-      # - name: Cypress run
-      #   uses: cypress-io/github-action@v4
-      #   with:
-      #     # runTests: false
-      #     build: npm install --save-dev cypress
       - name: Cypress run
         uses: cypress-io/github-action@v4
         with:    
           build: npm run build 
           start: npm test
           browser: chrome
-          #path: cypress/reports/html/
       - name: Upload Artifacts
         uses: actions/upload-artifact@v2
         with:
           name: my-artifacts
           path: /home/runner/work/LearningCypress/LearningCypress/cypress/reports/html
-
-
-        #  gh run download 6131437926 --artifact my-artifacts
-
