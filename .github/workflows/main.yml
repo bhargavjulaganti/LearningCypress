@@ -4,17 +4,24 @@ on: [push]
 
 jobs:
   cypress-run:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Execute tests
-        uses: cypress-io/github-action@v4
+      - name: run tests on chrome
+        uses: cypress-io/github-action@v6
         with:    
           build: npm run build 
           start: npm test
-          browser: edge
+          browser: chrome
+
+      - name: run tests on firefox
+        uses: cypress-io/github-action@v6
+        with:    
+          build: npm run build 
+          start: npm test
+          browser: firefox    
 
       - name: Download html report
         uses: actions/upload-artifact@v2
