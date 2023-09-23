@@ -9,7 +9,7 @@
 
 
 //     it('Enter Content into search attribute', () => {
-//         cy.visit("http://localhost:4200/")
+//         cy.visit("http://localhost:4200/") 
 
 //         cy.get('[data-cy="search-input-box"]')
 //             .invoke('attr', 'placeholder')

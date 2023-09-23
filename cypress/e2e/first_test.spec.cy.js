@@ -9,12 +9,12 @@ describe('google spec', () => {
     })
 
 
-    // it('Validate text on google home page', () => {
-    //     cy.visit("https://www.google.com/")
+    it('Validate text on google home page', () => {
+        cy.visit("https://www.google.com/")
 
-    //     cy.get('#gbqfbb')
-    //         .should('value', "I'm Feeling Lucky")
-    // })
+        cy.get('#gbqfbb')
+            .should('value', "I'm Feeling Lucky")
+    })
 
 
     // it('create alias', () => {

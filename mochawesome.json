@@ -1,0 +1,182 @@
+{
+  "stats": {
+    "suites": 2,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-09-16T00:41:28.479Z",
+    "end": "2023-09-16T00:41:40.402Z",
+    "duration": 5609,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "c23a1a13-06d9-49c1-89b8-fb86790cc234",
+      "title": "",
+      "fullFile": "cypress/e2e/mock_network.spec.cy.js",
+      "file": "cypress/e2e/mock_network.spec.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "90162cae-05d8-4646-915f-21442c19c9d1",
+          "title": "mock network calls",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "mock network calls",
+              "fullTitle": "mock network calls mock network calls",
+              "timedOut": null,
+              "duration": 2442,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "var myresponse = [{\n  \"book_name\": \"mocked response from cypress\",\n  \"isbn\": \"RSU\",\n  \"aisle\": \"2301\"\n}];\ncy.intercept({\n  method: 'GET',\n  // Route all GET requests\n  url: '**/GetBook.php?AuthorName=shetty' // that have a URL that matches '/users/*'\n}, myresponse // and force the response to be: []\n).as('getBook');\ncy.get('#navbarSupportedContent > ul > li:nth-child(2) > a').click();",
+              "err": {},
+              "uuid": "9f10679f-c7d5-424e-a546-a015cd6d6e30",
+              "parentUUID": "90162cae-05d8-4646-915f-21442c19c9d1",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "9f10679f-c7d5-424e-a546-a015cd6d6e30"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2442,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "5676d618-39b8-4f5d-940a-3816be678899",
+      "title": "",
+      "fullFile": "cypress/e2e/first_test.spec.cy.js",
+      "file": "cypress/e2e/first_test.spec.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "80315078-5b0b-4462-a3a3-690a8b6e40d0",
+          "title": "google spec",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "open google and enter test",
+              "fullTitle": "google spec open google and enter test",
+              "timedOut": null,
+              "duration": 2464,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"https://www.google.com/\");\ncy.get('#APjFqb') //'.gLFyf.gsfi')\n.type('My first cypress test');\ncy.title().should('eq', 'Google');",
+              "err": {},
+              "uuid": "92594bc6-4b0c-45db-9278-2114800f8e9b",
+              "parentUUID": "80315078-5b0b-4462-a3a3-690a8b6e40d0",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Validate text on google home page",
+              "fullTitle": "google spec Validate text on google home page",
+              "timedOut": null,
+              "duration": 703,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"https://www.google.com/\");\ncy.get('#gbqfbb').should('value', \"I'm Feeling Lucky\");",
+              "err": {},
+              "uuid": "85861044-39e9-4bbd-8dda-c2fcdfaac4f7",
+              "parentUUID": "80315078-5b0b-4462-a3a3-690a8b6e40d0",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "92594bc6-4b0c-45db-9278-2114800f8e9b",
+            "85861044-39e9-4bbd-8dda-c2fcdfaac4f7"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 3167,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
