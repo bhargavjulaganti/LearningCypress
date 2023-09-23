@@ -14,10 +14,10 @@ jobs:
         with:    
           build: npm run build 
           start: npm test
-          browser: firefox
+          browser: edge
 
       - name: Download html report
         uses: actions/upload-artifact@v2
         with:
-          name: my-artifacts
+          name: output report
           path: /home/runner/work/LearningCypress/LearningCypress/cypress/reports/html
